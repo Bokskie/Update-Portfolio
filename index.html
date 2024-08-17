@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <script src="./javascript/EmailJs.js"></script>
+    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "QxvoBEgljyb3-Azvi",
+        });
+    })(); 
+    </script>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="header_margin-section">
+            <div class="header-container">
+                <a class="header-name" href="#home">Johnzyn <span>Dael</span></a>
+                <button class="header-toggle" aria-label="Toggle navigation">
+                    <span class="sr-only"></span>
+                    &#9776;
+                </button>
+                <div class="header_navbar"> 
+                        <a href="#home" class="active">Home</a>
+                        <a href="#education">Education</a>
+                        <a href="#services">Services</a>
+                        <a href="#about">About-me</a>
+                        <a href="#contact">Contact</a>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+            <section id="home" class="home">
+                <div class="home_margin-section">
+                    <div class="home_container">
+                        <div class="home_introduction">
+                            <div class="home_header-name">Hi, It's <span>Johnzyn</span></div>
+                            <div class="home_sub-header">I'm a <span data-text="Web Developer">Web Developer</span></div>
+                            <div class="home_paragraph">
+                                with a passion for crafting innovative and efficient digital solutions, combining technical expertise with a keen eye for design to build responsive and engaging websites that meet client needs and drive business growth.
+                            </div>
+                            <div class="home_social-media-icons">
+                                <ul>
+                                    <li><a href="https://t.me/BokskieWafo" target="_blank"><i class='bx bxl-telegram' ></i></a></li>
+                                    <li><a href="https://www.facebook.com/BokskieDael" target="_blank"><i class='bx bxl-facebook-circle'></i></a></li>
+                                    <li><a href="https://github.com/Bokskie" target="_blank"><i class='bx bxl-github' ></i></a></li>
+                                    <li><a href="https://www.instagram.com/jzdael/?igsh=Z3gydWx6OHlnemJx" target="_blank"><i class='bx bxl-instagram' ></a></i></li>
+                                </ul>
+                            </div>
+                            <div class="home_buttons">
+                                <a href="#about" class="active home-button">Hire</a>
+                                <a href="#contact" class="home-button">Contact</a>
+                            </div>
+                        </div>
+                        <div class="home_profile-logo">
+                            <img src="./images/profile-logo.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="education">
+                <div class="education_margin-section">
+                    <div class="education_header-name">Education</div>
+                        <div class="education_container">
+                            <div class="education-box right">
+                                <div class="education-box_header-name">
+                                    Elementary School
+                                </div>
+                                <div class="paragraph">
+                                    Kimaya Jasaan Misamis Oriental
+                                </div>
+                                <div class="school-year">2014</div>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="blank-space"></div>
+                            <div class="blank-space"></div>
+                            <div class="vertical-line"></div>
+                            <div class="education-box left">
+                                <div class="education-box_header-name">
+                                    Junior High School
+                                </div>
+                                <div class="paragraph">Jasaan National High School</div>
+                                <div class="school-year">2018</div>
+                            </div>
+                            <div class="education-box right">
+                                <div class="education-box_header-name">
+                                    Senior High School
+                                </div>
+                                <div class="paragraph">Jasaan Senior High School</div>
+                                <div class="school-year">2020</div>
+                            </div>
+                            <div class="vertical-line"></div>
+                            <div class="blank-space"></div>
+                            <div class="blank-space"></div>
+                            <div class="vertical-line"></div>
+                            <div class="education-box left">
+                                <div class="education-box_header-name">
+                                    University School
+                                </div>
+                                <div class="paragraph">
+                                    University of Southern Philippines Technology Jasaan Campus
+                                </div>
+                                <div class="school-year">2024</div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </section>
+            <section id="services" class="services">
+                <div class="services_margin-section">
+                    <div class="services_header-name">Services</div>
+                    <div class="services_container">
+                        <div class="services-box">
+                            <div class="services_header-box">
+                                Frontend Development <i class='bx bx-code' ></i>
+                            </div>
+                            <div class="services_box-paragraph">
+                                I create engaging and responsive web interfaces using HTML, CSS, and JavaScript. I am currently enhancing my skills in CMS and frameworks, such as WordPress and React.js, to offer more versatile and modern solutions.
+                            </div>
+                        </div>
+                        <div class="services-box">
+                            <div class="services_header-box">
+                                Backend Development <i class='bx bx-code-alt' ></i>
+                            </div>
+                            <div class="services_box-paragraph">
+                                I develop robust and scalable server-side solutions using PHP and MySQL, focusing on secure and efficient data management and application performance.
+                            </div>
+                        </div>
+                        <div class="services-box">
+                            <div class="services_header-box">
+                                UI/UX Design <i class='bx bxs-palette'></i>
+                            </div>
+                            <div class="services_box-paragraph">
+                                I design intuitive and visually appealing web interfaces using Figma and Canva, crafting designs that enhance user experience and effectively communicate your brand’s message.
+                            </div>
+                        </div>
+                        <div class="services-box">
+                            <div class="services_header-box">
+                                Web Design <i class='bx bx-code-block'></i>
+                            </div>
+                            <div class="services_box-paragraph">
+                                I am dedicated to delivering exceptional web design by creating visually engaging and intuitive interfaces that enhance user experience. I meticulously ensure that each design element is thoughtfully crafted and optimized for both aesthetic appeal and functional performance.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="about" class="about">
+                <div class="about_margin-section">
+                    <div class="about_header-name">About-me</div>
+                        <div class="about_container">
+                            <div class="about_nav-buttons">
+                                <div class="about_nav-buttons_header-name">Why hire me?</div>
+                                <button onclick="showPage('about_works')" class="nav-button active">Works</button>
+                                <button onclick="showPage('about_information')" class="nav-button">About</button>
+                                <button onclick="showPage('about_skills')" class="nav-button">Skills</button>
+                            </div>
+                                <div id="about_works" class="about_works page">
+                                    <div class="about-works_container">
+                                            <div class="about-works_boxs">
+                                                <div class="about-works_box">
+                                                    <img src="./images/website-services.png" alt="Gallery Image 2">
+                                                    <div class="about-works_box_header-name">
+                                                        Website Services
+                                                    </div>
+                                                    <div class="about-works_box-paragraph">
+                                                        I created Website Services as part of a project for an HR company in Manila. This site showcases professional services designed to enhance and streamline operations, including recruitment, employee management, and tailored training. It aims to provide clear information to meet your HR needs and support growth.
+                                                    </div>
+                                                    <div class="demo-download_button">
+                                                        <a href="https://bokskie.github.io/website-services/" target="_blank">Demo</a>
+                                                        <a href="./zip/Services.rar" class="download-button" download>Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="about-works_box">
+                                                    <img src="./images/tourist-profile.png" alt="Gallery Image 1">
+                                                    <div class="about-works_box_header-name">
+                                                        Tourist System
+                                                    </div>
+                                                    <div class="about-works_box-paragraph">
+                                                        Developed a robust Tourist Guide Appointment Management System, delivering a user-friendly solution for streamlining appointment scheduling and management. This system was successfully implemented for a client base of second-year IT students, demonstrating my ability to create practical, effective solutions tailored to client needs.
+                                                    </div>
+                                                    <div class="demo-download_button">
+                                                        <a href="./zip/Tourist guide appointment management system.rar" class="download-button" download>Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="about-works_box">
+                                                    <img src="./images/coffee-system.png" alt="Gallery Image 3">
+                                                    <div class="about-works_box_header-name">
+                                                        Coffee Shop System
+                                                    </div>
+                                                    <div class="about-works_box-paragraph">
+                                                        Developed a comprehensive coffee shop management system as part of a school project, replicating key functionalities to streamline ordering, inventory, and customer management processes. This project demonstrated my ability to apply software development skills in creating practical solutions for real-world business scenarios.
+                                                    </div>
+                                                    <div class="demo-download_button">
+                                                        <a href="./zip/Coffee Shop Org.rar" class="download-button" download>Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="about-works_box">
+                                                    <img src="./images/ustp-system.png" alt="Gallery Image 3">
+                                                    <div class="about-works_box_header-name">
+                                                        USTP System
+                                                    </div>
+                                                    <div class="about-works_box-paragraph">
+                                                        During my third year, I successfully developed a comprehensive web system for USTP, which I prominently featured in my portfolio to showcase my technical abilities and project management skills, demonstrating my commitment and expertise. Username: Fiona Password: Paderaja
+                                                    </div>
+                                                    <div class="demo-download_button">
+                                                        <a href="./zip/Ustp-WebSystem.rar" class="download-button" download>Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="about-works_box">
+                                                    <img src="./images/e-commerce.png" alt="Gallery Image 2">
+                                                    <div class="about-works_box_header-name">
+                                                        E-commerce System
+                                                    </div>
+                                                    <div class="about-works_box-paragraph">
+                                                        Created a clone of a well-known e-commerce platform similar to Shopee as part of a school project. This endeavor involved replicating the design and core features of the original platform, allowing me to apply and showcase my skills in web development and e-commerce functionality within an academic setting.
+                                                    </div>
+                                                    <div class="demo-download_button">
+                                                        <a href="https://bokskie.github.io/Anti_Kupal/" target="_blank">Demo</a>
+                                                        <a href="./zip/Anti-KupalOrg-main.rar" class="download-button" download>Download</a>
+                                                    </div>
+                                                </div>
+                                                <div class="about-works_nav">
+                                                    <button class="prev" onclick="showPrevBox()">❮ Prev</button>
+                                                    <button class="next" onclick="showNextBox()">Next ❯</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="about_information" 
+                                class="about_information page">
+                                    <div class="about-paragraph">Name: <span>Johnzyn Dael</span></div>
+                                    <div class="about-paragraph">Experience: <span>2 Years</span></div>
+                                    <div class="about-paragraph">Nationality: <span>Filipino</span></div>
+                                    <div class="about-paragraph">Freelance: <span>Available</span></div>
+                                    <div class="about-paragraph">Phone: <span>09185474215</span></div>
+                                    <div class="about-paragraph">Email: <span>bokskiedael@gmail.com</span></div>
+                                    <div class="about-paragraph">Languages: <span>English, Tagalog, Bisaya</span></div>
+                                </div>
+                                <div id="about_skills" class="about_skills page">
+                                    <i class='bx bxl-html5' ></i>
+                                    <i class='bx bxl-css3' ></i>
+                                    <i class='bx bxl-javascript'></i>
+                                    <i class='bx bxl-wordpress'></i>
+                                    <i class='bx bxl-bootstrap' ></i>
+                                    <i class='bx bxl-php' ></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <div class="contact_margin-section">
+                    <div class="contact_header-name">Contact</div>
+                        <form id="contactForm">
+                            <div class="contact_input">
+                                <input type="text" id="name" name="name" placeholder="Name" required><br><br>
+                        
+                                <input type="email" id="email" name="email" placeholder="Email" required><br><br>
+
+                                <input type="number" id="number" name="number" placeholder="Number" required><br><br>
+
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required><br><br>
+                            </div>
+                            <div class="contact_message-textarea">
+                                <textarea id="message" name="message" rows="10" cols="50" placeholder="Your Message" required></textarea><br><br>
+
+                                <input class="submitBtn" type="submit" onclick="sendMail()" value="Send Message">
+                            </div>
+
+
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">
+                <div class="footer_margin-section">
+                    <div class="footer_container">
+                        <div class="footer_paragraph">© 2024 Johnzyn Dael. All rights reserved.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./javascript/PageSwitcher.js"></script>
+    <script src="./javascript/AboutPageSwitcher.js"></script>
+    <script src="./javascript/HeaderActiveHover.js"></script>
+    <script src="./javascript/HeaderToggle.js"></script>
+    <script src="./javascript/AboutNavbarBtn.js"></script>
+    <script src="./javascript/AboutWorks.js"></script>
+
+</body>
+</html>

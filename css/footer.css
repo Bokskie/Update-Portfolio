@@ -1,0 +1,40 @@
+.footer 
+{
+    background-color: var(--secondary-bg-color);
+    padding: 20px 0 20px 0;
+}
+.footer_margin-section
+{
+    width: 1200px;
+    margin: auto;
+}
+.footer_container
+{
+    display: flex;
+    justify-content: center;
+}
+.footer_paragraph
+{
+    text-align: center;
+    color: #c9c9c9;
+    font-size: var(--fs-small);
+}
+/*------- Laptop Devices Responsive--------*/
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    .footer_margin-section
+    {
+        width: 80%;
+    }
+
+}
+
+/*-------- Mobile Devices Responsive -------*/
+@media only screen and (max-width: 767px) {
+
+    .footer_margin-section
+    {
+        width: 90%;
+    }
+    
+}

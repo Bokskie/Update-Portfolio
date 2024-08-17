@@ -1,0 +1,28 @@
+@import 'main.css';
+@import 'header.css';
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;        
+    font-family: "Poppins", sans-serif !important;
+    
+}
+:root 
+{
+    --primary-bg-color: #080808;
+    --secondary-bg-color: #131313;
+    --text-color: #ffffff;
+    --text-black-color: #000000;
+    --primary-color: #00ffee;
+
+    --fs-small: 12px;
+    --fs-medium: 20px;
+    --fs-large: 36px;
+    --fs-xl:46px;
+}

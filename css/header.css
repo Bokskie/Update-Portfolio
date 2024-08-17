@@ -1,0 +1,123 @@
+.header
+{
+    background-color: var(--primary-bg-color);
+    padding: 20px 0 20px 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    max-width: 100%;
+}
+.header_margin-section
+{
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+.header-container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header-name 
+{
+    color: var(--text-color);
+    font-size: var(--fs-medium);
+    font-weight: 900;
+    cursor: pointer;
+}
+.header-name:hover 
+{
+    transform: scale(1.25);
+    transition: 0.3s ease-in-out;
+}
+.header-name span 
+{
+    color: var(--primary-color);
+}
+.header_navbar a
+{
+    color: var(--text-color);
+    padding: 10px;
+    font-weight: 600;
+}
+.header_navbar a:hover,
+.header_navbar a.active 
+{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+    transition: all ease-out 0.3s;
+}
+
+.header-toggle 
+{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+/*-------Laptop Devices Responsive------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    
+    .header_margin-section 
+    {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+}
+
+
+/*---- Mobile styles -----*/
+@media (max-width: 768px) {
+
+    .header_margin-section 
+    {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .header-container 
+    {
+        
+        align-items: flex-start;
+    }
+    .header_navbar 
+    {
+        display: none; 
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(--primary-bg-color); 
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        padding: 10px 0;
+        z-index: 101; 
+    }
+    .header_navbar a 
+    {
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+        color: var(--text-color); 
+        display: block;
+    }
+    .header_navbar.active 
+    {
+        display: flex; 
+    }
+    .header-toggle 
+    {
+        display: block;
+    }
+    .header-name:hover 
+    {
+        transform: scale(1.10);
+        transition: 0.3s ease-in-out;
+    }
+}

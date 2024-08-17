@@ -1,0 +1,10 @@
+@import 'home.css';
+@import 'education.css';
+@import 'services.css';
+@import 'about.css';
+@import 'contact.css';
+@import 'footer.css';
+.main
+{
+    background-color: var(--primary-bg-color);
+}

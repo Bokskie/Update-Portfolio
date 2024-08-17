@@ -1,0 +1,130 @@
+.services 
+{
+    padding-top: 4rem;
+    height: 100vh;
+}
+.services_margin-section
+{
+    width: 900px;
+    margin: auto;
+}
+.services_header-name
+{
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+    padding-bottom: 10px;
+}
+.services_container
+{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 20px;
+    gap: 20px;
+}
+.services-box
+{
+    background-color: var(--primary-color);
+    width: 450px;
+    height: 200px;
+    margin: auto;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 30px;
+}
+.services-box:hover 
+{
+    background-color: var(--text-color);
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    border: 3px solid var(--primary-color);
+}
+.services_header-box
+{
+    font-size: var(--fs-medium);
+    font-weight: 900;
+}
+.services_box-paragraph
+{
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+/*---Laptop Devices Responsive----*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .services 
+    {
+        padding: 3rem 0 3rem 0; 
+        height: auto;
+    }
+    .services_margin-section 
+    {
+        width: 80%; 
+        max-width: 900px;
+    }
+
+    .services_header-name 
+    {
+        padding-bottom: 8px; 
+    }
+    .services_container 
+    {
+        grid-template-rows: 1fr 1fr; 
+        grid-template-columns: 1fr 1fr;
+        gap: 20px; 
+    }
+    .services-box 
+    {
+        width: 100%; 
+        height: 200px; 
+        padding: 25px; 
+    }
+    .services_box-paragraph 
+    {
+        padding-top: 15px; 
+    }
+}
+
+/*-------- Mobile Devices Responsive -------*/
+@media only screen and (max-width: 767px) {
+    .services 
+    {
+        padding: 2rem 0 2rem 0; 
+        height: auto; 
+    }
+    .services_margin-section 
+    {
+        width: 90%; 
+        margin: auto;
+    }
+    .services_header-name 
+    {
+        font-size: var(--fs-large); 
+        padding-bottom: 5px; 
+    }
+    .services_container 
+    {
+        grid-template-rows: auto;
+        grid-template-columns: 1fr; 
+        gap: 15px;
+        padding-top: 10px;
+    }
+    .services-box 
+    {
+        width: 100%; 
+        height: auto;
+        padding: 20px; 
+        margin: 10px 0; 
+    }
+    .services_header-box 
+    {
+        font-size: var(--fs-small); 
+    }
+    .services_box-paragraph 
+    {
+        font-size: 10px; 
+        padding-top: 10px; 
+    }
+}

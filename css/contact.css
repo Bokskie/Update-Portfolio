@@ -1,0 +1,119 @@
+.contact
+{
+    background-color: var(--primary-bg-color);
+    padding-top: 4rem;
+    height: 100vh;
+}
+.contact_margin-section
+{
+    width: 800px;
+    margin: auto;
+}
+.contact_header-name
+{
+    color: var(--text-color);
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    text-align: center;
+}   
+form 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding-top: 3rem;
+}
+form .contact_input,form .contact_message-textarea
+{
+    margin: auto;
+}
+form input 
+{
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    padding: 14px;
+    width: 300px;
+    color: var(--text-color);
+}
+form textarea 
+{
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-bg-color);
+    padding: 14px;
+    width: 400px;
+    color: var(--text-color);
+}
+form .submitBtn
+{
+    border-radius: 3rem;
+    background-color: var(--primary-color);
+    color: var(--text-black-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    cursor: pointer;
+    width: 200px;
+    font-weight: 600;
+}
+form .submitBtn:hover 
+{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/*----Laptop Devices Responsive----*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .contact
+    {
+        width: 100%;
+        margin: auto;
+        height: auto;
+        padding-bottom: 40px;
+    }
+    form input
+    {
+        width: 100%;
+    }
+    form textarea 
+    {
+        width: 80%; 
+        margin: 0 auto; 
+    }
+}
+    
+
+/*----Mobile Devices Responsive-----*/
+@media only screen and (max-width: 767px) {
+
+    .contact 
+    {
+        padding: 2rem 0 2rem 0; 
+        height: auto; 
+    }
+    .contact_margin-section 
+    {
+        width: 90%; 
+    }
+    .contact_header-name 
+    {
+        font-size: var(--fs-large); 
+        padding-bottom: 1rem; 
+    }
+    form 
+    {
+        grid-template-columns: 1fr; 
+        padding-top: 2rem; 
+    }
+    form input,
+    form textarea 
+    {
+        width: 300px; 
+        margin: 0 auto; 
+    }
+    form .submitBtn 
+    {
+        width: 100%; 
+        padding: 10px; 
+    }
+}

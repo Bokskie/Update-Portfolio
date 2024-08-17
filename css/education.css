@@ -1,0 +1,140 @@
+.education 
+{
+    background-color: var(--secondary-bg-color);
+    padding-top: 4rem;
+}
+.education_margin-section
+{
+    width: 700px;
+    margin: auto;
+}
+.education_header-name
+{
+    color: var(--text-color);
+    text-align: center;
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    cursor: pointer;
+}
+.education_container
+{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); 
+    grid-template-columns: 1fr 0fr 1fr; 
+    align-items: center;
+    gap: 0;
+}
+.education-box 
+{
+    background-color: var(--primary-bg-color);
+    width: 270px;
+    height: 140px;
+    padding: 10px 3px 3px 20px;
+    border-radius: 1rem;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+    cursor: pointer;
+    position: relative;
+    margin: 40px; 
+}
+.education-box.left::after 
+{
+    content: '';
+    position: absolute;
+    right: 100%; 
+    top: 50%;
+    width: 44px;
+    height: 2px; 
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+}
+.education-box.right::after 
+{
+    content: '';
+    position: absolute;
+    left: 100%; 
+    top: 50%;
+    width: 44px; 
+    height: 2px; 
+    background-color: var(--primary-color);
+    transform: translateY(-50%);
+}
+.vertical-line 
+{
+    width: 2px;
+    height: 220px; 
+    background-color: var(--primary-color);
+}
+.education-box_header-name
+{
+    font-size: var(--fs-medium);
+    color: var(--text-color);
+    font-weight: 900;
+}
+.paragraph
+{
+    color: var(--text-color);
+    justify-content: left;
+    font-size: var(--fs-small);
+    padding: 15px 0 10px 0;
+    font-weight: 550;
+}
+.school-year
+{
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 550;
+}
+
+
+/*-------- Mobile Devices Responsive -------*/
+@media (max-width: 768px) {
+
+    .education 
+    {
+        padding: 4rem 0 4rem 0;
+    }
+    .education_margin-section 
+    {
+        width: 90%; 
+        margin: 0 auto; 
+    }
+    .education_container 
+    {
+        grid-template-rows: auto; 
+        grid-template-columns: 1fr; 
+    }
+    .education-box 
+    {
+        width: 100%; 
+        height: auto; 
+        margin: 20px 0; 
+        padding: 20px;
+    }
+    .education-box.left::after,
+    .education-box.right::after 
+    {
+        display: none; 
+    }
+    .vertical-line 
+    {
+        display: none; 
+    }
+    .education_header-name 
+    {
+        font-size: var(--fs-large); 
+    }
+    .education-box_header-name 
+    {
+        font-size: var(--fs-small);
+    }
+    .paragraph 
+    {
+        font-size: var(--fs-small); 
+    }
+
+    .school-year 
+    {
+        font-size: 12px; 
+    }
+}

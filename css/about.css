@@ -1,0 +1,341 @@
+.about
+{
+    background-color: var(--secondary-bg-color);
+    height: 100vh;
+    padding-top: 4rem;
+}
+.about_margin-section
+{
+    width: 900px;
+    margin: auto;
+}
+.about_header-name
+{
+    font-size: var(--fs-xl);
+    font-weight: 900;
+    color: var(--text-color);
+    text-align: center;
+}
+.about_container
+{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.about_nav-buttons 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.about_nav-buttons .nav-button
+{
+    background-color: var(--primary-bg-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    padding: 20px;
+    font-weight: 900;
+    cursor: pointer;
+    width: 200px;
+}
+.about_nav-buttons .nav-button:hover
+{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    color: var(--text-black-color);
+}
+.nav-button.active {
+    background-color: var(--primary-color);
+    color: var(--text-black-color);
+    border: 2px solid var(--primary-color);
+    box-shadow: 0 0 10px var(--primary-color);
+}
+.about_nav-buttons_header-name
+{
+    font-size: var(--fs-medium);
+    font-weight: 550;
+    color: var(--text-color);
+}
+/*---about works design------*/
+.about-works_container 
+{
+    position: relative;
+    width: 100%;
+    text-align: center; 
+}
+.about-works_boxs 
+{
+    display: flex;
+    overflow: hidden; 
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 50px; 
+}
+.about-works_box 
+{
+    flex: 0 0 100%; 
+    padding: 20px;
+    background-color: var(--primary-bg-color);
+    border: 3px solid var(--primary-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px; 
+}
+.about-works_box img 
+{
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+.about-works_box_header-name 
+{
+    font-size: var(--fs-medium);
+    font-weight: bold;
+    margin-top: 10px;
+    color: var(--text-color);
+}
+.about-works_box-paragraph 
+{
+    font-size: var(--fs-small);
+    margin-top: 10px;
+    color: var(--text-color);
+}
+.demo-download_button
+{
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.demo-download_button a 
+{
+    background-color: var(--primary-color);
+    color: var(--text-black-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: var(--fs-small);
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 10;
+    pointer-events: auto;
+}
+.demo-download_button a:hover 
+{
+    background-color: var(--text-black-color);
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+.about-works_nav 
+{
+    position: absolute; 
+    bottom: 10px; 
+    width: 100%; 
+    display: flex;
+    justify-content: space-between; 
+    padding: 0 20px; 
+}
+.prev, .next 
+{
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    padding: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.prev:hover, .next:hover 
+{
+    background-color: var(--primary-color);
+    color: var(--text-black-color);
+    transform: scale(1.05);
+}
+/*---about information design----*/
+.about_information
+{
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.about_information .about-paragraph
+{
+    font-size: var(--fs-small);
+    color: var(--text-color);
+    padding: 10px;
+}
+.about_information .about-paragraph span 
+{
+    font-weight: 900;
+}
+/*---about skills design----*/
+.about_skills
+{
+    position: relative;
+    top: 2rem;
+    width: 300px;
+    height: 340px;
+}
+.about_skills i 
+{
+    font-size: 80px;
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 100%;
+}
+.about_skills i:hover 
+{
+    transform: scale(1.25);
+    transition: 0.3s ease-in-out;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 15px var(--primary-color);
+    color: var(--text-black-color);
+}
+/*--page switcher function---*/
+.page 
+{
+    display: none;
+}
+.page.active 
+{
+    display: block;
+}
+
+/*----Laptop Devices Responsive----*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .about
+    {
+        height: auto
+    }
+    .about_margin-section
+    {
+        width: 90%;
+        margin: auto;
+    }
+    .about-works_boxs 
+    {
+        height: 360px;
+        margin-bottom: 50px; 
+    }
+    .about_information
+    {
+        height: 350px;
+        margin-bottom: 50px;
+    }
+    .about_skills
+    {
+        width: 300px;
+        height: 400px;
+    }
+}
+    
+/*-------- Mobile Devices Responsive -------*/
+@media only screen and (max-width: 767px) {
+    .about 
+    {
+        padding: 2rem 0 2rem 0; 
+        height: auto; 
+    }
+    .about_margin-section 
+    {
+        width: 90%; 
+        margin: auto;
+    }
+    .about_header-name {
+        font-size: var(--fs-large); 
+        padding-bottom: 5px;
+    }
+    .about_container 
+    {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto; 
+        gap: 1rem;
+        padding-top: 1rem; 
+    }
+    .about_nav-buttons 
+    {
+        flex-direction: row; 
+        justify-content: center; 
+        gap: 0.5rem; 
+    }
+    .about_nav-buttons .nav-button 
+    {
+        padding: 10px; 
+        width: 70px;
+    }
+
+    /* About Works Design */
+    .about-works_boxs 
+    {
+        display: flex; 
+        overflow-x: auto; 
+        margin-bottom: 20px; 
+        height: 420px;
+        display: block; 
+        margin-bottom: 20px; 
+    }
+    .about-works_box 
+    {
+        width: auto; 
+        padding: 15px; 
+        margin: 10px 0; 
+        height: 360px;
+    }
+    .about-works_nav 
+    {
+        position: static; 
+        margin-top: 10px; 
+        padding: 0; 
+        
+    }
+    .prev, .next 
+    {
+        padding: 8px; 
+        font-size: 14px; 
+    }
+
+    /*--- About Information Design ---*/
+    .about_information 
+    {
+        flex-direction: column; 
+        padding: 0 10px; 
+        height: 420px;
+    }
+
+    .about_information .about-paragraph 
+    {
+        font-size: var(--fs-small); 
+        padding: 20px; 
+    }
+    /* --About Skills Design --*/
+    .about_skills
+    {
+        margin-top: 3rem;
+        width: 100%; 
+        height: 420px;
+        text-align: center; 
+    }
+    .about_skills i 
+    {
+        font-size: 80px; 
+        margin: 10px; 
+    }
+}
